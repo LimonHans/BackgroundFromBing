@@ -31,5 +31,4 @@ def main():
     with open('SavePath.txt', 'r') as f:
         dirname = f.read()
     save_img(get_img_url(), dirname)
-#    set_img_as_wallpaper(filepath)
 main()
