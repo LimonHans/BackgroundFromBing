@@ -37,6 +37,8 @@ def main():
                 print('已更新过，正在退出 Already Updated, exiting')
                 sign = True
             else:
+                f.seek(0)
+                f.truncate()
                 f.write(Date)
     except:
         with open('Last_Date.txt', 'w') as f:
